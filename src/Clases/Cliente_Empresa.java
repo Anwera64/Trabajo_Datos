@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package oracleconnection;
+package Clases;
 
 /**
  *
@@ -11,6 +11,7 @@ package oracleconnection;
  */
 public class Cliente_Empresa extends Cliente {
     private int idClienteEmpresa;
+
     private String ruc;
     private String razonSocial;
     private String ObjetoSocial;
@@ -36,6 +37,14 @@ public class Cliente_Empresa extends Cliente {
 
     public String getEmail() {
         return email;
+    }
+    
+    public int getIdClienteEmpresa() {
+        return idClienteEmpresa;
+    }
+
+    public int getIdCliente() {
+        return idCliente;
     }
     
     
