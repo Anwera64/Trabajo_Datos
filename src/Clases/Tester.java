@@ -11,21 +11,16 @@ import java.util.Date;
  *
  * @author Anwera97
  */
-public class Empleado {
-   protected int idEmpleado;
-   protected int dni;
-   protected int sueldo;
-   protected Date fechaContrato;
-   protected String correo;
-   protected String nombre;
+public class Tester extends Empleado {
+    private int idTester;
 
-    public Empleado(int idEmpleado, int dni, int sueldo, Date fechaContrato, String correo, String nombre) {
-        this.idEmpleado = idEmpleado;
-        this.dni = dni;
-        this.sueldo = sueldo;
-        this.fechaContrato = fechaContrato;
-        this.correo = correo;
-        this.nombre = nombre;
+    public Tester(int idTester, int idEmpleado, int dni, int sueldo, Date fechaContrato, String correo, String nombre) {
+        super(idEmpleado, dni, sueldo, fechaContrato, correo, nombre);
+        this.idTester = idTester;
+    }
+
+    public int getIdTester() {
+        return idTester;
     }
 
     public int getIdEmpleado() {
@@ -51,5 +46,6 @@ public class Empleado {
     public String getNombre() {
         return nombre;
     }
-   
+    
+    
 }
