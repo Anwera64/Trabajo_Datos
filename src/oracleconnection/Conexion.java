@@ -8,6 +8,8 @@ package oracleconnection;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 /**
  *
@@ -28,7 +30,7 @@ public class Conexion {
         password = "sistemas";
     }
     
-    public Connection Conectar() {
+    public Connection conectarse() {
          Connection conn = null;
         try {
             String driverName = "oracle.jdbc.driver.OracleDriver";
@@ -41,5 +43,12 @@ public class Conexion {
             System.out.println("No se pudo conectar a la base de datos" + e.getMessage());
         }
         return conn;
+    }
+    public void desconectarse(Connection con) {
+        try {
+            con.close();
+        } catch (SQLException ex) {
+            Logger.getLogger(Conexion.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
 }

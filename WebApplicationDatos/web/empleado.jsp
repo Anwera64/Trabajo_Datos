@@ -43,7 +43,13 @@
             <div class="form-group">
                 <label for="nombre">Correo: </label>
                 <input type="text" class="form-control" id="correoEmp">
-            </div>			
+            </div>
+             <div class="form-group">
+                 <label for="nombre">Rol</label>
+               <select>
+ 
+</select>
+            </div>	
 
             <button id="btnRegistrar" class="btn btn-success">Registrar</button>	
         </div>

@@ -7,8 +7,11 @@ package oracleconnection;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import jdk.nashorn.internal.runtime.options.Options;
 
 /**
  *
@@ -19,10 +22,13 @@ public class Main {
     /**
      * @param args the command line arguments
      */
+    
     public static void main(String[] args) {
+          
+
         // TODO code application logic here
         Conexion con = new Conexion();
-        Connection conn = con.Conectar();
+        Connection conn = con.conectarse();
         try {
             conn.close();
             System.out.println("Conexion cerrada");
@@ -30,5 +36,7 @@ public class Main {
             Logger.getLogger(Main.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        
+    
     }
 }
