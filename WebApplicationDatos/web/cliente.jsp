@@ -6,12 +6,33 @@
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
+
 <html>
-    <head>
-        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
-    </head>
-    <body>
-        <h1>Hello World!</h1>
-    </body>
+<head>
+	<title>Cliente  nuevo</title>
+	<meta charset="utf-8" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+</head>
+<body class="container">
+    <h3>Registrar Cliente</h3>
+	<div class="container bordes col-md-6">
+		
+			<div class="form-group">
+				<label for="nombre">Nombre: </label>
+				<input type="text" class="form-control" id="nombreCli">
+			</div>
+
+			
+
+			<div class="form-group">
+				<label for="nombre">Email: </label>
+				<input type="text" class="form-control" id="emailC">
+			</div>
+
+			
+                    <button id="btnRegistrar" class="btn btn-success">Registrar</button>	
+	</div>
+
+       
+</body>
 </html>

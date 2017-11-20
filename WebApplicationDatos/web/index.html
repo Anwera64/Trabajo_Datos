@@ -13,7 +13,7 @@ and open the template in the editor.
     </head>
     <body class="container">
 
-        <p class="bg-primary formaContenedor container">Proyecto Final: Registro</p>
+        <h2><p class="bg-success formaContenedor container">StartApps</p></h2>
 
 
 
@@ -32,7 +32,7 @@ and open the template in the editor.
 
                     <td ><h4>Proyectos              </h4></td>
                     <td>
-                        <form method="POST" action="listaEmpleadosServlet" accept-charset="UTF-8">
+                        <form method="POST" action="listaProyectosServlet" accept-charset="UTF-8">
                             <button type="submit" id="n" class="btn btn-success">Ver 
                                 <span  class="fa fa-search-plus" aria-hidden="true"></span></button>
                         </form>
@@ -49,7 +49,7 @@ and open the template in the editor.
 
                     <td ><h4>Empleados              </h4></td>
                     <td>
-                          <form method="POST" action="proyecto" accept-charset="UTF-8">
+                          <form method="POST" action="listaEmpleadosServlet" accept-charset="UTF-8">
                         <button type="submit" id="btnSaveIncidencia" class="btn btn-success">Ver 
                             <span  class="fa fa-search-plus" aria-hidden="true"></span></button></form>
                               <form method="POST" action="empleadosServlet" accept-charset="UTF-8">
@@ -65,11 +65,14 @@ and open the template in the editor.
 
 
                     <td ><h4>Clientes</h4></td>
-                    <td>
-                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">Ver 
-                            <span  class="fa fa-search-plus" aria-hidden="true"></span></button>
+                    <td><form method="POST" action="listaClientesServlet" accept-charset="UTF-8">
+                            
+                        <button type="submit" id="btnSaveIncidencia" class="btn btn-success">Ver
+                            
+                                 <span  class="fa fa-search-plus" aria-hidden="true"></span></button> </form>
+                        <form method="POST" action="clienteServlet" accept-charset="UTF-8">
                         <button type="submit" id="btnSaveIncidencia" class="btn btn-success">añadir 
-                            <span  class="fa fa-plus" aria-hidden="true"></span></button>
+                            <span  class="fa fa-plus" aria-hidden="true"></span></button> </form>
                         <button type="submit" id="btnSaveIncidencia" class="btn btn-success">eliminar 
                             <span  class="fa fa-remove" aria-hidden="true"></span></button>
 
